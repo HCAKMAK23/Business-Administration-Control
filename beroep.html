@@ -2,176 +2,165 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Business Administration & Control – Beroep</title>
+  <title>Beroep – Business Administration & Control</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
     body {
-      background-color: #f5f7fa;
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
     }
+
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd;
+      transform: translateY(-2px);
+      transition: 0.3s;
+    }
+
     .page-header {
-      padding: 3rem 0 2rem;
+      background: linear-gradient(to right, #6610f2, #0d6efd);
+      color: white;
+      padding: 5rem 0;
+      text-align: center;
     }
+
+    .page-header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
     footer {
       margin-top: 4rem;
-      padding: 1.5rem 0;
-      background-color: #ffffff;
-      border-top: 1px solid #e5e5e5;
-      font-size: 0.9rem;
-      color: #6c757d;
+      padding: 2rem 0;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Business Admin & Control</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <a class="navbar-brand fw-bold" href="index.html">BA & Control</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
+      <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="opleiding.html">Opleiding</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="beroep.html">Beroep</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="over-mij.html">Over mij</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="opleiding.html">Opleiding</a></li>
+          <li class="nav-item"><a class="nav-link active" href="beroep.html">Beroep</a></li>
+          <li class="nav-item"><a class="nav-link" href="over-mij.html">Over mij</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
-  <header class="page-header">
-    <div class="container">
-      <h1 class="mb-3">Over het beroep</h1>
-      <p class="text-muted mb-0">
-        Hier komt jouw uitleg over het beroep waar je naartoe werkt: wat je later gaat doen,
-        waar je kunt werken en hoe de toekomst van dit beroep eruitziet.
-      </p>
-    </div>
+  <header class="page-header" data-aos="fade-down">
+    <h1>Over het beroep</h1>
+    <p class="mt-3">Ontdek wat je later gaat doen, waar je kunt werken en hoe de toekomst van dit beroep eruitziet.</p>
   </header>
 
   <!-- Content -->
-  <main class="pb-4">
+  <section class="py-5">
     <div class="container">
       <div class="row g-4">
+
+        <!-- Left column -->
         <div class="col-lg-8">
-          <div class="card shadow-sm mb-4">
+
+          <div class="card shadow-sm mb-4" data-aos="fade-right">
             <div class="card-body">
-              <h2 class="h4">Informatie over het beroep</h2>
-              <p>
-                Hier leg je uit wat je later gaat doen in dit beroep. Denk aan taken zoals:
-                financiële administratie bijhouden, facturen verwerken, rapportages maken,
-                controleren of alles klopt en samenwerken met collega’s in finance en control.
-              </p>
+              <h3 class="h4"><i class="fa-solid fa-briefcase me-2"></i>Informatie over het beroep</h3>
+              <p>Hier komt jouw uitleg over wat je later gaat doen in dit beroep.</p>
             </div>
           </div>
 
-          <div class="card shadow-sm mb-4">
+          <div class="card shadow-sm mb-4" data-aos="fade-right" data-aos-delay="150">
             <div class="card-body">
-              <h2 class="h4">Werkgelegenheid in de regio</h2>
-              <p>
-                Hier beschrijf je hoe de baankansen zijn in jouw regio. Bijvoorbeeld:
-                hoeveel bedrijven er zijn die met administratie en finance werken,
-                welke sectoren (zorg, overheid, commerciële bedrijven) en hoe groot de vraag is naar mensen
-                met jouw opleiding.
-              </p>
+              <h3 class="h4"><i class="fa-solid fa-chart-line me-2"></i>Werkgelegenheid in de regio</h3>
+              <p>Hier beschrijf je hoe de baankansen zijn in jouw regio.</p>
             </div>
           </div>
 
-          <div class="card shadow-sm mb-4">
+          <div class="card shadow-sm mb-4" data-aos="fade-right" data-aos-delay="300">
             <div class="card-body">
-              <h2 class="h4">Arbeidsmarktperspectief en toekomst</h2>
-              <p>
-                Hier zet je informatie over hoe het beroep zich ontwikkelt en wat de toekomst is.
-                Denk aan digitalisering, werken met moderne software, automatisering van administratie
-                en waarom er toch mensen nodig blijven die alles controleren en analyseren.
-              </p>
+              <h3 class="h4"><i class="fa-solid fa-arrow-trend-up me-2"></i>Arbeidsmarktperspectief & toekomst</h3>
+              <p>Hier komt informatie over de toekomst van het beroep.</p>
             </div>
           </div>
 
-          <div class="card shadow-sm">
+          <div class="card shadow-sm" data-aos="fade-right" data-aos-delay="450">
             <div class="card-body">
-              <h2 class="h4">Benodigde vaardigheden en software</h2>
-              <p>
-                Hier beschrijf je welke vaardigheden belangrijk zijn in jouw beroep: nauwkeurig werken,
-                goed met cijfers, verantwoordelijkheidsgevoel, communiceren met collega’s en omgaan met deadlines.
-              </p>
-              <p class="mb-0">
-                Ook kun je hier noemen welke software je gebruikt of gaat gebruiken, zoals boekhoudpakketten,
-                Excel, ERP‑systemen en andere financiële tools.
-              </p>
+              <h3 class="h4"><i class="fa-solid fa-laptop me-2"></i>Vaardigheden & software</h3>
+              <p>Hier beschrijf je welke vaardigheden en software belangrijk zijn.</p>
             </div>
           </div>
+
         </div>
 
+        <!-- Right column -->
         <div class="col-lg-4">
-          <div class="card shadow-sm mb-4">
+
+          <div class="card shadow-sm mb-4" data-aos="zoom-in">
             <div class="card-body">
-              <h2 class="h5">Vacaturesites</h2>
-              <p>
-                Hier zet je links naar vacaturesites, bijvoorbeeld:
-              </p>
+              <h4 class="h5"><i class="fa-solid fa-magnifying-glass me-2"></i>Vacaturesites</h4>
               <ul>
                 <li>Monsterboard</li>
                 <li>Jobbird</li>
                 <li>Nationale Vacaturebank</li>
                 <li>Indeed</li>
               </ul>
-              <p class="mb-0">
-                Je kunt ook specifieke vacatures toevoegen die passen bij jouw opleiding.
-              </p>
             </div>
           </div>
 
-          <div class="card shadow-sm mb-4">
+          <div class="card shadow-sm mb-4" data-aos="zoom-in" data-aos-delay="150">
             <div class="card-body">
-              <h2 class="h5">Beroepenfilmpjes</h2>
-              <p>
-                Hier plaats je links naar twee video’s over jouw beroep. Bijvoorbeeld YouTube‑video’s
-                waarin het werk van een financieel medewerker, controller of administratief medewerker wordt uitgelegd.
-              </p>
+              <h4 class="h5"><i class="fa-solid fa-video me-2"></i>Beroepenfilmpjes</h4>
+              <p>Hier komen links naar twee video's over jouw beroep.</p>
             </div>
           </div>
 
-          <div class="card shadow-sm">
+          <div class="card shadow-sm" data-aos="zoom-in" data-aos-delay="300">
             <div class="card-body">
-              <h2 class="h5">Collage of diavoorstelling</h2>
-              <p>
-                Hier komt een beschrijving of een reeks afbeeldingen over het beroep: kantoren,
-                werkplekken, documenten, grafieken en andere beelden die laten zien hoe het werk eruitziet.
-              </p>
+              <h4 class="h5"><i class="fa-solid fa-images me-2"></i>Collage / Diavoorstelling</h4>
+              <p>Hier komen afbeeldingen of een collage over het beroep.</p>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
-  </main>
+  </section>
 
-  <!-- Footer -->
   <footer>
-    <div class="container text-center">
-      <span>Beroepsinformatie – Business Administration &amp; Control specialist</span>
-    </div>
+    © 2026 – Business Administration & Control
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-  </script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+
 </body>
 </html>
