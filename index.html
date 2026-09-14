@@ -2,20 +2,106 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Business Administration & Control – Website</title>
+  <title>Business Administration & Control – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+    }
+    .navbar-brand {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .hero {
+      padding: 4rem 0;
+    }
+    .hero-title {
+      font-weight: 700;
+    }
+    .hero-subtitle {
+      color: #6c757d;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 1.5rem 0;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welkom op mijn website</h1>
-  <p>Deze website is gemaakt voor het keuzedeel Digitale Vaardigheden.</p>
 
-  <nav>
-    <ul>
-      <li><a href="opleiding.html">Over de opleiding</a></li>
-      <li><a href="beroep.html">Over het beroep</a></li>
-      <li><a href="over-mij.html">Over mij</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Business Admin & Control</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="opleiding.html">Opleiding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beroep.html">Beroep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="over-mij.html">Over mij</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <p>Op deze website geef ik informatie voor toekomstige studenten van de opleiding Business Administration & Control specialist.</p>
-</body>
-</html>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="hero-title mb-3">Welkom op mijn website</h1>
+          <p class="hero-subtitle mb-4">
+            Deze website is gemaakt voor het keuzedeel Digitale Vaardigheden en geeft informatie
+            over de opleiding Business Administration &amp; Control specialist, het beroep en mijn eigen ervaringen.
+          </p>
+          <a href="opleiding.html" class="btn btn-primary btn-lg me-2">Lees over de opleiding</a>
+          <a href="over-mij.html" class="btn btn-outline-secondary btn-lg">Leer mij kennen</a>
+        </div>
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Voor toekomstige studenten</h5>
+              <p class="card-text">
+                Op deze website vind je een overzicht van de opleiding, het beroep waar je naartoe werkt
+                en hoe ik de opleiding zelf ervaar. Zo krijg je een eerlijk beeld van wat je kunt verwachten.
+              </p>
+              <ul class="mb-0">
+                <li>Informatie over de opleiding</li>
+                <li>Uitleg over het beroep</li>
+                <li>Persoonlijke ervaringen en media</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info blocks -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
