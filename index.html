@@ -5,103 +5,159 @@
   <title>Business Administration & Control – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
     body {
-      background-color: #f5f7fa;
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .navbar-brand {
-      font-weight: 600;
-      letter-spacing: 0.03em;
+
+    .navbar {
+      padding: 1rem 0;
+      transition: 0.3s;
     }
+
+    .navbar-nav .nav-link {
+      margin-left: 1rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd;
+      transform: translateY(-2px);
+    }
+
     .hero {
-      padding: 4rem 0;
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 6rem 0;
+      text-align: left;
     }
-    .hero-title {
+
+    .hero h1 {
+      font-size: 3rem;
       font-weight: 700;
     }
-    .hero-subtitle {
-      color: #6c757d;
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
+
+    .btn-glow {
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+      transition: 0.3s;
+    }
+
+    .btn-glow:hover {
+      box-shadow: 0 0 25px rgba(255,255,255,0.7);
+      transform: translateY(-3px);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
     footer {
       margin-top: 4rem;
-      padding: 1.5rem 0;
-      background-color: #ffffff;
-      border-top: 1px solid #e5e5e5;
-      font-size: 0.9rem;
-      color: #6c757d;
+      padding: 2rem 0;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Business Admin & Control</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <a class="navbar-brand fw-bold" href="index.html">BA & Control</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
+      <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="opleiding.html">Opleiding</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="beroep.html">Beroep</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="over-mij.html">Over mij</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="opleiding.html">Opleiding</a></li>
+          <li class="nav-item"><a class="nav-link" href="beroep.html">Beroep</a></li>
+          <li class="nav-item"><a class="nav-link" href="over-mij.html">Over mij</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" data-aos="fade-right">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <h1 class="hero-title mb-3">Welkom op mijn website</h1>
-          <p class="hero-subtitle mb-4">
-            Deze website is gemaakt voor het keuzedeel Digitale Vaardigheden en geeft informatie
-            over de opleiding Business Administration &amp; Control specialist, het beroep en mijn eigen ervaringen.
-          </p>
-          <a href="opleiding.html" class="btn btn-primary btn-lg me-2">Lees over de opleiding</a>
-          <a href="over-mij.html" class="btn btn-outline-secondary btn-lg">Leer mij kennen</a>
-        </div>
-        <div class="col-lg-5 mt-4 mt-lg-0">
-          <div class="card shadow-sm">
+      <h1>Welkom op mijn website</h1>
+      <p class="mt-3">
+        Deze website is gemaakt voor het keuzedeel Digitale Vaardigheden en geeft informatie
+        over de opleiding Business Administration & Control specialist.
+      </p>
+      <a href="opleiding.html" class="btn btn-light btn-lg btn-glow mt-3">Ontdek de opleiding</a>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
-              <h5 class="card-title">Voor toekomstige studenten</h5>
-              <p class="card-text">
-                Op deze website vind je een overzicht van de opleiding, het beroep waar je naartoe werkt
-                en hoe ik de opleiding zelf ervaar. Zo krijg je een eerlijk beeld van wat je kunt verwachten.
-              </p>
-              <ul class="mb-0">
-                <li>Informatie over de opleiding</li>
-                <li>Uitleg over het beroep</li>
-                <li>Persoonlijke ervaringen en media</li>
-              </ul>
+              <h5 class="card-title"><i class="fa-solid fa-graduation-cap me-2"></i>Opleiding</h5>
+              <p class="card-text">Alles over de vakken, school, sfeer en waarom deze opleiding bij jou past.</p>
+              <a href="opleiding.html" class="btn btn-primary btn-sm">Bekijk</a>
             </div>
           </div>
         </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-briefcase me-2"></i>Beroep</h5>
+              <p class="card-text">Wat je later gaat doen, baankansen, toekomst en benodigde vaardigheden.</p>
+              <a href="beroep.html" class="btn btn-primary btn-sm">Bekijk</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user me-2"></i>Over mij</h5>
+              <p class="card-text">Wie ik ben, mijn ervaringen, video's, quotes en persoonlijke collage.</p>
+              <a href="over-mij.html" class="btn btn-primary btn-sm">Bekijk</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Info blocks -->
-  <section class="py-4">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">
+  <footer>
+    © 2026 – Business Administration & Control – Keuzedeel Digitale Vaardigheden
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
