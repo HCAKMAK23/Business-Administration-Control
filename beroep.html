@@ -2,36 +2,176 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Over het beroep</title>
+  <title>Business Administration & Control – Beroep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+    }
+    .page-header {
+      padding: 3rem 0 2rem;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 1.5rem 0;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
 </head>
 <body>
-  <h1>Over het beroep</h1>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="opleiding.html">Over de opleiding</a> |
-    <a href="over-mij.html">Over mij</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Business Admin & Control</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="opleiding.html">Opleiding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="beroep.html">Beroep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="over-mij.html">Over mij</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <h2>Informatie over het beroep</h2>
-  <p>Hier leg je uit wat je later gaat doen in dit beroep.</p>
+  <!-- Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="mb-3">Over het beroep</h1>
+      <p class="text-muted mb-0">
+        Hier komt jouw uitleg over het beroep waar je naartoe werkt: wat je later gaat doen,
+        waar je kunt werken en hoe de toekomst van dit beroep eruitziet.
+      </p>
+    </div>
+  </header>
 
-  <h2>Vacaturesites</h2>
-  <p>Hier zet je links naar vacaturesites (bijv. Monsterboard, Jobbird, Nationale Vacaturebank).</p>
+  <!-- Content -->
+  <main class="pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="h4">Informatie over het beroep</h2>
+              <p>
+                Hier leg je uit wat je later gaat doen in dit beroep. Denk aan taken zoals:
+                financiële administratie bijhouden, facturen verwerken, rapportages maken,
+                controleren of alles klopt en samenwerken met collega’s in finance en control.
+              </p>
+            </div>
+          </div>
 
-  <h2>Werkgelegenheid in de regio</h2>
-  <p>Hier beschrijf je hoe de baankansen zijn in jouw regio.</p>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="h4">Werkgelegenheid in de regio</h2>
+              <p>
+                Hier beschrijf je hoe de baankansen zijn in jouw regio. Bijvoorbeeld:
+                hoeveel bedrijven er zijn die met administratie en finance werken,
+                welke sectoren (zorg, overheid, commerciële bedrijven) en hoe groot de vraag is naar mensen
+                met jouw opleiding.
+              </p>
+            </div>
+          </div>
 
-  <h2>Arbeidsmarktperspectief en toekomst van het beroep</h2>
-  <p>Hier zet je informatie over hoe het beroep zich ontwikkelt en wat de toekomst is.</p>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="h4">Arbeidsmarktperspectief en toekomst</h2>
+              <p>
+                Hier zet je informatie over hoe het beroep zich ontwikkelt en wat de toekomst is.
+                Denk aan digitalisering, werken met moderne software, automatisering van administratie
+                en waarom er toch mensen nodig blijven die alles controleren en analyseren.
+              </p>
+            </div>
+          </div>
 
-  <h2>Beroepenfilmpjes</h2>
-  <p>Hier plaats je links naar de twee video’s over jouw beroep.</p>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Benodigde vaardigheden en software</h2>
+              <p>
+                Hier beschrijf je welke vaardigheden belangrijk zijn in jouw beroep: nauwkeurig werken,
+                goed met cijfers, verantwoordelijkheidsgevoel, communiceren met collega’s en omgaan met deadlines.
+              </p>
+              <p class="mb-0">
+                Ook kun je hier noemen welke software je gebruikt of gaat gebruiken, zoals boekhoudpakketten,
+                Excel, ERP‑systemen en andere financiële tools.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  <h2>Collage of diavoorstelling</h2>
-  <p>Hier komt een beschrijving of een reeks afbeeldingen over het beroep.</p>
+        <div class="col-lg-4">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="h5">Vacaturesites</h2>
+              <p>
+                Hier zet je links naar vacaturesites, bijvoorbeeld:
+              </p>
+              <ul>
+                <li>Monsterboard</li>
+                <li>Jobbird</li>
+                <li>Nationale Vacaturebank</li>
+                <li>Indeed</li>
+              </ul>
+              <p class="mb-0">
+                Je kunt ook specifieke vacatures toevoegen die passen bij jouw opleiding.
+              </p>
+            </div>
+          </div>
 
-  <h2>Benodigde vaardigheden en software</h2>
-  <p>Hier beschrijf je welke vaardigheden en software belangrijk zijn in jouw beroep.</p>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="h5">Beroepenfilmpjes</h2>
+              <p>
+                Hier plaats je links naar twee video’s over jouw beroep. Bijvoorbeeld YouTube‑video’s
+                waarin het werk van een financieel medewerker, controller of administratief medewerker wordt uitgelegd.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h5">Collage of diavoorstelling</h2>
+              <p>
+                Hier komt een beschrijving of een reeks afbeeldingen over het beroep: kantoren,
+                werkplekken, documenten, grafieken en andere beelden die laten zien hoe het werk eruitziet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <span>Beroepsinformatie – Business Administration &amp; Control specialist</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
