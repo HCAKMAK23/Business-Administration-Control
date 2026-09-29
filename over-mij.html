@@ -1,207 +1,96 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Over mij – Business Administration & Control</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --secondary: #6610f2;
-      --bg: #0b1020;
-      --card-bg: #141827;
-      --text-light: #f8f9fa;
-      --muted: #adb5bd;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #1b2340 0, #050814 60%);
-      color: var(--text-light);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    }
-
-    .navbar {
-      background: rgba(5, 8, 20, 0.9) !important;
-      backdrop-filter: blur(10px);
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--primary);
-      transform: translateY(-2px);
-      transition: 0.3s;
-    }
-
-    .page-header {
-      padding: 7rem 0 4rem;
-      text-align: center;
-    }
-
-    .page-header h1 {
-      font-size: 2.6rem;
-      font-weight: 800;
-    }
-
-    .page-header p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: 0 auto;
-    }
-
-    .card-pro {
-      background: var(--card-bg);
-      border-radius: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card-pro::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      right: -40%;
-      width: 60%;
-      height: 60%;
-      background: radial-gradient(circle, rgba(102, 16, 242, 0.35), transparent 60%);
-      opacity: 0;
-      transition: 0.4s;
-    }
-
-    .card-pro:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8);
-    }
-
-    .card-pro:hover::before {
-      opacity: 1;
-    }
-
-    .quote-box {
-      background: #1b2133;
-      border-left: 4px solid var(--primary);
-      padding: 0.8rem 1rem;
-      border-radius: 0.6rem;
-      margin-bottom: 0.7rem;
-      font-style: italic;
-      color: var(--muted);
-      transition: 0.3s;
-    }
-
-    .quote-box:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 0;
-      background: rgba(5, 8, 20, 0.95);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Over mij – Hasan Cakmak</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+:root{
+  --primary:#0d6efd;
+  --secondary:#6610f2;
+  --bg:#0b1020;
+  --card-bg:#141827;
+  --text-light:#f8f9fa;
+  --muted:#adb5bd;
+}
+body{
+  background:radial-gradient(circle at top,#1b2340 0,#050814 60%);
+  color:var(--text-light);
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+}
+.navbar{background:rgba(5,8,20,.92)!important;backdrop-filter:blur(10px)}
+.navbar-brand{font-weight:700;letter-spacing:.03em}
+.navbar-nav .nav-link{margin-left:.7rem;font-weight:500;transition:.3s}
+.navbar-nav .nav-link:hover{color:var(--primary);transform:translateY(-2px)}
+.page-header{padding:7rem 0 4rem;text-align:center}
+.page-header h1{font-size:2.7rem;font-weight:800}
+.page-header p{color:var(--muted);max-width:760px;margin:0 auto}
+.hero{padding:8rem 0 5rem}
+.hero-title{font-size:3.3rem;font-weight:800}
+.hero-subtitle{font-size:1.12rem;color:var(--muted);max-width:700px}
+.btn-glow{border-radius:999px;padding:.8rem 1.8rem;font-weight:600;box-shadow:0 0 20px rgba(13,110,253,.45);background:linear-gradient(to right,var(--primary),var(--secondary));border:none;transition:.3s}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 0 30px rgba(13,110,253,.7)}
+.hero-card,.card-pro{background:var(--card-bg);border:1px solid rgba(255,255,255,.06);border-radius:1rem;box-shadow:0 15px 30px rgba(0,0,0,.55)}
+.card-pro{transition:.3s;position:relative;overflow:hidden}
+.card-pro:hover{transform:translateY(-6px);box-shadow:0 25px 45px rgba(0,0,0,.75)}
+.card-pro h3 i,.card-pro h4 i,.card-title i{color:var(--primary)}
+.info-badge{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:rgba(13,110,253,.12);border:1px solid rgba(13,110,253,.25);margin:.2rem;color:#dbe9ff}
+.quote-box{background:#1b2133;border-left:4px solid var(--primary);padding:.8rem 1rem;border-radius:.6rem;margin-bottom:.7rem;font-style:italic;color:var(--muted)}
+.list-clean li{margin-bottom:.55rem}
+footer{margin-top:4rem;padding:2rem 0;background:rgba(5,8,20,.95);border-top:1px solid rgba(255,255,255,.05);text-align:center;color:var(--muted);font-size:.9rem}
+.small-muted{color:var(--muted)}
+.stat{font-size:1.8rem;font-weight:800}
+</style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="index.html">Business Administration &amp; Control</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link " href="opleiding.html">Opleiding</a></li>
+<li class="nav-item"><a class="nav-link " href="beroep.html">Beroep</a></li>
+<li class="nav-item"><a class="nav-link " href="stage.html">Stage</a></li>
+<li class="nav-item"><a class="nav-link active" href="over-mij.html">Over mij</a></li>
+</ul>
+</div></div></nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Business-Administration & Control</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="opleiding.html">Opleiding</a></li>
-          <li class="nav-item"><a class="nav-link" href="beroep.html">Beroep</a></li>
-          <li class="nav-item"><a class="nav-link active" href="over-mij.html">Over mij</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header class="page-header" data-aos="fade-down"><div class="container">
+<h1>Over mij</h1><p>Mijn naam is Hasan Cakmak. Op deze pagina vertel ik wie ik ben, wat ik leuk vind en waar ik naartoe wil.</p>
+</div></header>
+<section class="py-4"><div class="container"><div class="row g-4">
+<div class="col-lg-8">
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-user me-2"></i>Wie ben ik?</h3>
+<p>Mijn naam is <strong>Hasan Cakmak</strong>, ik ben 21 jaar oud en woon in Rijswijk. Ik volg de opleiding Business Administration &amp; Control Specialist op mbo niveau 4 bij ROC Mondriaan. Ik zit in mijn derde leerjaar.</p>
+<p>Ik ben iemand die goed kan samenwerken en flexibel is. Ik vind het belangrijk om mijn afspraken na te komen en mij aan te passen wanneer een situatie daarom vraagt.</p></div>
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-futbol me-2"></i>Mijn hobby's</h3>
+<p>In mijn vrije tijd houd ik mij graag bezig met <strong>werken</strong> en <strong>voetballen</strong>. Voetbal vind ik leuk omdat je samenwerkt en als team naar een doel toe werkt.</p></div>
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-road me-2"></i>Mijn toekomst</h3>
+<p>Ik heb voor Business Administration &amp; Control gekozen omdat ik het leuk vind om met boekhouden en cijfers te werken. Mijn doel is om later <strong>boekhouder</strong> te worden.</p>
+<p>Ik zie voor mezelf een goede toekomst in deze richting, omdat ik mijn interesse in cijfers kan combineren met praktische ervaring op school en tijdens mijn stage.</p></div>
+<div class="card-pro p-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-video me-2"></i>Introductievideo &amp; vlog</h3>
+<p>Voor de eindopdracht kan ik hier mijn introductievideo plaatsen waarin ik mijzelf, mijn opleiding en mijn toekomstdoel voorstel.</p>
+<p>Daarnaast kan ik hier een korte vlog van mijn school- en stageweek plaatsen.</p>
+<div class="alert alert-dark border-secondary mb-0">Voeg hier later jouw eigen video-links of ingesloten video's toe.</div></div>
+</div>
+<div class="col-lg-4">
+<div class="card-pro p-4 mb-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-star me-2"></i>Mijn sterke punten</h4>
+<ul class="list-clean"><li>Goed samenwerken</li><li>Flexibel</li><li>Interesse in cijfers</li><li>Praktisch ingesteld</li></ul></div>
+<div class="card-pro p-4 mb-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-quote-left me-2"></i>Quotes</h4>
+<p class="small-muted">Voor dit onderdeel wil ik echte korte uitspraken van familieleden gebruiken. Zo blijft de website persoonlijk en betrouwbaar.</p>
+<div class="quote-box">“Hier komt een echte quote van een familielid.”</div>
+<div class="quote-box">“Hier komt een tweede echte quote.”</div></div>
+<div class="card-pro p-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-images me-2"></i>Mijn collage</h4>
+<p>Hier kan ik foto's toevoegen van mezelf, school, voetbal, mijn stage en projecten.</p>
+<p class="small-muted mb-0">Gebruik alleen foto's die je zelf mag publiceren.</p></div>
+</div></div></div></section>
 
-  <header class="page-header" data-aos="fade-down">
-    <h1>Over mij</h1>
-    <p>Hier komt jouw persoonlijke verhaal: wie je bent, waarom je deze opleiding doet en hoe je jouw toekomst ziet.</p>
-  </header>
-
-  <section class="py-4">
-    <div class="container">
-      <div class="row g-4">
-
-        <div class="col-lg-8">
-
-          <div class="card-pro p-4 mb-4" data-aos="fade-right">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-user me-2"></i>Introductievideo
-            </h3>
-            <p>Hier komt de link naar jouw introductievideo waarin je jezelf voorstelt.</p>
-            <p class="mb-0">Vertel wie je bent, welke opleiding je doet en wat jouw doelen zijn.</p>
-          </div>
-
-          <div class="card-pro p-4 mb-4" data-aos="fade-right" data-aos-delay="150">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-video me-2"></i>Vlog over mijn schoolweek
-            </h3>
-            <p>Hier komt de link naar je vlog of een beschrijving van je week.</p>
-            <p class="mb-0">Je kunt vertellen hoe jouw dagen eruitzien: lessen, projecten, stage en vrije tijd.</p>
-          </div>
-
-          <div class="card-pro p-4" data-aos="fade-right" data-aos-delay="300">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-book-open me-2"></i>Mijn belevenissen in de opleiding
-            </h3>
-            <p>Hier schrijf je hoe jij de opleiding ervaart: wat je leuk vindt, wat je uitdagend vindt en waar je trots op bent.</p>
-            <p class="mb-0">Ik vul dit later met jouw eigen verhaal zodra jij jouw info geeft.</p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-4">
-
-          <div class="card-pro p-4 mb-4" data-aos="zoom-in">
-            <h4 class="h5 mb-3">
-              <i class="fa-solid fa-comments me-2"></i>Quotes van mijn familie
-            </h4>
-
-            <div class="quote-box">“Hier komt quote 1.”</div>
-            <div class="quote-box">“Hier komt quote 2.”</div>
-            <div class="quote-box">“Hier komt quote 3.”</div>
-            <div class="quote-box">“Hier komt quote 4.”</div>
-            <div class="quote-box">“Hier komt quote 5.”</div>
-
-            <p class="mt-2 mb-0">Ik maak deze quotes later op basis van jouw familie‑verhaal.</p>
-          </div>
-
-          <div class="card-pro p-4" data-aos="zoom-in" data-aos-delay="150">
-            <h4 class="h5 mb-3">
-              <i class="fa-solid fa-images me-2"></i>Collage over mij en mijn opleiding
-            </h4>
-            <p>Hier komen foto’s of een collage over jou, je opleiding, je klas en je projecten.</p>
-            <p class="mb-0">Je kunt later echte afbeeldingen toevoegen.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 – Business Administration &amp; Control
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });</script>
-
-</body>
-</html>
+<footer>© 2026 – Hasan Cakmak – Business Administration &amp; Control – Keuzedeel Digitale Vaardigheden</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({once:true,duration:700,easing:'ease-out-cubic'});</script>
+</body></html>
