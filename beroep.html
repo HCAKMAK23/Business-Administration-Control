@@ -1,203 +1,95 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Beroep – Business Administration & Control</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --secondary: #6610f2;
-      --bg: #0b1020;
-      --card-bg: #141827;
-      --text-light: #f8f9fa;
-      --muted: #adb5bd;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #1b2340 0, #050814 60%);
-      color: var(--text-light);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    }
-
-    .navbar {
-      background: rgba(5, 8, 20, 0.9) !important;
-      backdrop-filter: blur(10px);
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--primary);
-      transform: translateY(-2px);
-      transition: 0.3s;
-    }
-
-    .page-header {
-      padding: 7rem 0 4rem;
-      text-align: center;
-    }
-
-    .page-header h1 {
-      font-size: 2.6rem;
-      font-weight: 800;
-    }
-
-    .page-header p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: 0 auto;
-    }
-
-    .card-pro {
-      background: var(--card-bg);
-      border-radius: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card-pro::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      right: -40%;
-      width: 60%;
-      height: 60%;
-      background: radial-gradient(circle, rgba(13, 110, 253, 0.35), transparent 60%);
-      opacity: 0;
-      transition: 0.4s;
-    }
-
-    .card-pro:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8);
-    }
-
-    .card-pro:hover::before {
-      opacity: 1;
-    }
-
-    .card-pro h3 i {
-      color: var(--primary);
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 0;
-      background: rgba(5, 8, 20, 0.95);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mijn toekomstige beroep – Boekhouder</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+:root{
+  --primary:#0d6efd;
+  --secondary:#6610f2;
+  --bg:#0b1020;
+  --card-bg:#141827;
+  --text-light:#f8f9fa;
+  --muted:#adb5bd;
+}
+body{
+  background:radial-gradient(circle at top,#1b2340 0,#050814 60%);
+  color:var(--text-light);
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+}
+.navbar{background:rgba(5,8,20,.92)!important;backdrop-filter:blur(10px)}
+.navbar-brand{font-weight:700;letter-spacing:.03em}
+.navbar-nav .nav-link{margin-left:.7rem;font-weight:500;transition:.3s}
+.navbar-nav .nav-link:hover{color:var(--primary);transform:translateY(-2px)}
+.page-header{padding:7rem 0 4rem;text-align:center}
+.page-header h1{font-size:2.7rem;font-weight:800}
+.page-header p{color:var(--muted);max-width:760px;margin:0 auto}
+.hero{padding:8rem 0 5rem}
+.hero-title{font-size:3.3rem;font-weight:800}
+.hero-subtitle{font-size:1.12rem;color:var(--muted);max-width:700px}
+.btn-glow{border-radius:999px;padding:.8rem 1.8rem;font-weight:600;box-shadow:0 0 20px rgba(13,110,253,.45);background:linear-gradient(to right,var(--primary),var(--secondary));border:none;transition:.3s}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 0 30px rgba(13,110,253,.7)}
+.hero-card,.card-pro{background:var(--card-bg);border:1px solid rgba(255,255,255,.06);border-radius:1rem;box-shadow:0 15px 30px rgba(0,0,0,.55)}
+.card-pro{transition:.3s;position:relative;overflow:hidden}
+.card-pro:hover{transform:translateY(-6px);box-shadow:0 25px 45px rgba(0,0,0,.75)}
+.card-pro h3 i,.card-pro h4 i,.card-title i{color:var(--primary)}
+.info-badge{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:rgba(13,110,253,.12);border:1px solid rgba(13,110,253,.25);margin:.2rem;color:#dbe9ff}
+.quote-box{background:#1b2133;border-left:4px solid var(--primary);padding:.8rem 1rem;border-radius:.6rem;margin-bottom:.7rem;font-style:italic;color:var(--muted)}
+.list-clean li{margin-bottom:.55rem}
+footer{margin-top:4rem;padding:2rem 0;background:rgba(5,8,20,.95);border-top:1px solid rgba(255,255,255,.05);text-align:center;color:var(--muted);font-size:.9rem}
+.small-muted{color:var(--muted)}
+.stat{font-size:1.8rem;font-weight:800}
+</style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="index.html">Business Administration &amp; Control</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link " href="opleiding.html">Opleiding</a></li>
+<li class="nav-item"><a class="nav-link active" href="beroep.html">Beroep</a></li>
+<li class="nav-item"><a class="nav-link " href="stage.html">Stage</a></li>
+<li class="nav-item"><a class="nav-link " href="over-mij.html">Over mij</a></li>
+</ul>
+</div></div></nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Business-Administration & Control</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="opleiding.html">Opleiding</a></li>
-          <li class="nav-item"><a class="nav-link active" href="beroep.html">Beroep</a></li>
-          <li class="nav-item"><a class="nav-link" href="over-mij.html">Over mij</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header class="page-header" data-aos="fade-down"><div class="container">
+<h1>Mijn toekomstige beroep: boekhouder</h1><p>Ik wil later graag als boekhouder werken, omdat ik het leuk vind om met cijfers, administratie en financiële gegevens bezig te zijn.</p>
+</div></header>
+<section class="py-4"><div class="container"><div class="row g-4">
+<div class="col-lg-8">
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-calculator me-2"></i>Wat doet een boekhouder?</h3>
+<p>Een boekhouder houdt zich bezig met het verwerken, controleren en ordenen van financiële gegevens. Denk aan facturen, betalingen, administratie en financiële overzichten. Vanuit de opleiding leer ik ook hoe financiële informatie kan worden gebruikt om een organisatie te ondersteunen en te adviseren.</p>
+<p>Ik vind boekhouden leuk omdat het voor mij lijkt op het oplossen van een grote, logische puzzel. Het geeft voldoening wanneer de cijfers kloppen. Ik vind het daarnaast interessant dat cijfers iets vertellen over hoe een bedrijf ervoor staat.</p></div>
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-chart-line me-2"></i>Arbeidsmarkt en toekomst</h3>
+<p>De arbeidsmarkt verandert door digitalisering en geautomatiseerde administratieve systemen. Daardoor zijn niet alleen nauwkeurigheid en kennis van administratie belangrijk, maar ook digitale vaardigheden en het kunnen analyseren en uitleggen van financiële informatie.</p>
+<p>UWV beschreef in het eerste kwartaal van 2026 de arbeidsmarktspanning voor boekhoudkundig medewerkers als <strong>gemiddeld</strong>. Dat betekent dat ik mijn kansen niet alleen wil baseren op het beroep zelf, maar ook op mijn digitale vaardigheden, praktijkervaring en ontwikkeling.</p>
+<p class="small-muted">Bron: UWV, arbeidsmarktinformatie 2026.</p></div>
+<div class="card-pro p-4 mb-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-laptop-code me-2"></i>Vaardigheden die ik nodig heb</h3>
+<div><span class="info-badge">Nauwkeurig werken</span><span class="info-badge">Samenwerken</span><span class="info-badge">Flexibiliteit</span><span class="info-badge">Cijfermatig inzicht</span><span class="info-badge">Digitale vaardigheden</span><span class="info-badge">Communiceren</span></div>
+<p class="mt-3">Tijdens mijn opleiding leer ik werken met geautomatiseerde systemen en financiële gegevens. In de praktijk leer ik daarnaast hoe belangrijk controle, nauwkeurigheid en verantwoord omgaan met financiële informatie zijn.</p></div>
+<div class="card-pro p-4" data-aos="fade-right"><h3 class="h4"><i class="fa-solid fa-briefcase me-2"></i>Waar kan ik werken?</h3>
+<p>Met deze richting kun je bijvoorbeeld werken binnen een financiële afdeling, administratie, accountancyomgeving, zakelijke dienstverlening of overheid. Mijn eigen stage bij de Gemeente Den Haag laat mij zien hoe financiële administratie ook binnen een grote publieke organisatie wordt uitgevoerd.</p></div>
+</div>
+<div class="col-lg-4">
+<div class="card-pro p-4 mb-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-magnifying-glass me-2"></i>Vacatures zoeken</h4>
+<ul class="list-clean"><li>Indeed</li><li>Nationale Vacaturebank</li><li>Monsterboard</li><li>Jobbird</li></ul>
+<p class="small-muted mb-0">Zoek bijvoorbeeld op “boekhouder”, “financieel administratief medewerker” of “junior financieel medewerker”.</p></div>
+<div class="card-pro p-4 mb-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-arrow-trend-up me-2"></i>Mijn toekomst</h4>
+<p>Mijn doel is om na mijn opleiding als boekhouder te werken en mij verder te ontwikkelen in financiële administratie en control.</p></div>
+<div class="card-pro p-4" data-aos="zoom-in"><h4 class="h5"><i class="fa-solid fa-video me-2"></i>Beroepenfilmpjes</h4>
+<p>Hier kan ik later twee video's toevoegen waarin het beroep boekhouder of financieel administratief medewerker wordt uitgelegd.</p>
+<p class="small-muted mb-0">Voeg hier jouw twee gekozen videolinks toe.</p></div>
+</div></div></div></section>
 
-  <header class="page-header" data-aos="fade-down">
-    <h1>Over het beroep</h1>
-    <p>Hier leg je uit wat je later gaat doen, waar je kunt werken en hoe de toekomst van dit beroep eruitziet.</p>
-  </header>
-
-  <section class="py-4">
-    <div class="container">
-      <div class="row g-4">
-
-        <div class="col-lg-8">
-
-          <div class="card-pro p-4 mb-4" data-aos="fade-right">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-briefcase me-2"></i>Informatie over het beroep
-            </h3>
-            <p>Hier komt jouw uitleg over wat je later gaat doen in dit beroep.</p>
-          </div>
-
-          <div class="card-pro p-4 mb-4" data-aos="fade-right" data-aos-delay="150">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-chart-line me-2"></i>Werkgelegenheid in de regio
-            </h3>
-            <p>Hier beschrijf je hoe de baankansen zijn in jouw regio.</p>
-          </div>
-
-          <div class="card-pro p-4 mb-4" data-aos="fade-right" data-aos-delay="300">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-arrow-trend-up me-2"></i>Arbeidsmarktperspectief & toekomst
-            </h3>
-            <p>Hier komt informatie over de toekomst van het beroep.</p>
-          </div>
-
-          <div class="card-pro p-4" data-aos="fade-right" data-aos-delay="450">
-            <h3 class="h4 mb-3">
-              <i class="fa-solid fa-laptop me-2"></i>Benodigde vaardigheden & software
-            </h3>
-            <p>Hier beschrijf je welke vaardigheden en software belangrijk zijn in jouw beroep.</p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-4">
-
-          <div class="card-pro p-4 mb-4" data-aos="zoom-in">
-            <h4 class="h5 mb-3">
-              <i class="fa-solid fa-magnifying-glass me-2"></i>Vacaturesites
-            </h4>
-            <ul>
-              <li>Monsterboard</li>
-              <li>Jobbird</li>
-              <li>Nationale Vacaturebank</li>
-              <li>Indeed</li>
-            </ul>
-          </div>
-
-          <div class="card-pro p-4 mb-4" data-aos="zoom-in" data-aos-delay="150">
-            <h4 class="h5 mb-3">
-              <i class="fa-solid fa-video me-2"></i>Beroepenfilmpjes
-            </h4>
-            <p>Hier komen links naar twee video’s over jouw beroep.</p>
-          </div>
-
-          <div class="card-pro p-4" data-aos="zoom-in" data-aos-delay="300">
-            <h4 class="h5 mb-3">
-              <i class="fa-solid fa-images me-2"></i>Collage / Diavoorstelling
-            </h4>
-            <p>Hier komen afbeeldingen of een collage over het beroep.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 – Business Administration &amp; Control
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });</script>
-
-</body>
-</html>
+<footer>© 2026 – Hasan Cakmak – Business Administration &amp; Control – Keuzedeel Digitale Vaardigheden</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({once:true,duration:700,easing:'ease-out-cubic'});</script>
+</body></html>
