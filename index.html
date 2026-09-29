@@ -1,288 +1,86 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Business Administration & Control – Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- AOS Animations -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --secondary: #6610f2;
-      --bg: #0b1020;
-      --card-bg: #141827;
-      --text-light: #f8f9fa;
-      --muted: #adb5bd;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #1b2340 0, #050814 60%);
-      color: var(--text-light);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    }
-
-    .navbar {
-      background: rgba(5, 8, 20, 0.9) !important;
-      backdrop-filter: blur(10px);
-      transition: background 0.3s, box-shadow 0.3s;
-    }
-
-    .navbar-brand {
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .navbar-nav .nav-link {
-      margin-left: 1rem;
-      font-weight: 500;
-      position: relative;
-      transition: 0.3s;
-    }
-
-    .navbar-nav .nav-link::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(to right, var(--primary), var(--secondary));
-      transition: width 0.3s;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--primary);
-      transform: translateY(-2px);
-    }
-
-    .navbar-nav .nav-link:hover::after {
-      width: 100%;
-    }
-
-    .hero {
-      padding: 7rem 0 5rem;
-    }
-
-    .hero-title {
-      font-size: 3.2rem;
-      font-weight: 800;
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 600px;
-    }
-
-    .btn-glow {
-      border-radius: 999px;
-      padding: 0.8rem 1.8rem;
-      font-weight: 600;
-      box-shadow: 0 0 20px rgba(13, 110, 253, 0.5);
-      background: linear-gradient(to right, var(--primary), var(--secondary));
-      border: none;
-      transition: 0.3s;
-    }
-
-    .btn-glow:hover {
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 0 30px rgba(13, 110, 253, 0.8);
-    }
-
-    .hero-card {
-      background: linear-gradient(145deg, #141827, #1c2235);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 1rem;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-card h5 {
-      font-weight: 600;
-    }
-
-    .hero-card ul {
-      padding-left: 1.2rem;
-    }
-
-    .section-title {
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .card-pro {
-      background: var(--card-bg);
-      border-radius: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-      transition: 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card-pro::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      right: -40%;
-      width: 60%;
-      height: 60%;
-      background: radial-gradient(circle, rgba(13, 110, 253, 0.35), transparent 60%);
-      opacity: 0;
-      transition: 0.4s;
-    }
-
-    .card-pro:hover {
-      transform: translateY(-8px) scale(1.01);
-      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8);
-    }
-
-    .card-pro:hover::before {
-      opacity: 1;
-    }
-
-    .card-pro .card-title i {
-      color: var(--primary);
-    }
-
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 0;
-      background: rgba(5, 8, 20, 0.95);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hasan Cakmak – Business Administration & Control</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+:root{
+  --primary:#0d6efd;
+  --secondary:#6610f2;
+  --bg:#0b1020;
+  --card-bg:#141827;
+  --text-light:#f8f9fa;
+  --muted:#adb5bd;
+}
+body{
+  background:radial-gradient(circle at top,#1b2340 0,#050814 60%);
+  color:var(--text-light);
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+}
+.navbar{background:rgba(5,8,20,.92)!important;backdrop-filter:blur(10px)}
+.navbar-brand{font-weight:700;letter-spacing:.03em}
+.navbar-nav .nav-link{margin-left:.7rem;font-weight:500;transition:.3s}
+.navbar-nav .nav-link:hover{color:var(--primary);transform:translateY(-2px)}
+.page-header{padding:7rem 0 4rem;text-align:center}
+.page-header h1{font-size:2.7rem;font-weight:800}
+.page-header p{color:var(--muted);max-width:760px;margin:0 auto}
+.hero{padding:8rem 0 5rem}
+.hero-title{font-size:3.3rem;font-weight:800}
+.hero-subtitle{font-size:1.12rem;color:var(--muted);max-width:700px}
+.btn-glow{border-radius:999px;padding:.8rem 1.8rem;font-weight:600;box-shadow:0 0 20px rgba(13,110,253,.45);background:linear-gradient(to right,var(--primary),var(--secondary));border:none;transition:.3s}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 0 30px rgba(13,110,253,.7)}
+.hero-card,.card-pro{background:var(--card-bg);border:1px solid rgba(255,255,255,.06);border-radius:1rem;box-shadow:0 15px 30px rgba(0,0,0,.55)}
+.card-pro{transition:.3s;position:relative;overflow:hidden}
+.card-pro:hover{transform:translateY(-6px);box-shadow:0 25px 45px rgba(0,0,0,.75)}
+.card-pro h3 i,.card-pro h4 i,.card-title i{color:var(--primary)}
+.info-badge{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:rgba(13,110,253,.12);border:1px solid rgba(13,110,253,.25);margin:.2rem;color:#dbe9ff}
+.quote-box{background:#1b2133;border-left:4px solid var(--primary);padding:.8rem 1rem;border-radius:.6rem;margin-bottom:.7rem;font-style:italic;color:var(--muted)}
+.list-clean li{margin-bottom:.55rem}
+footer{margin-top:4rem;padding:2rem 0;background:rgba(5,8,20,.95);border-top:1px solid rgba(255,255,255,.05);text-align:center;color:var(--muted);font-size:.9rem}
+.small-muted{color:var(--muted)}
+.stat{font-size:1.8rem;font-weight:800}
+</style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="index.html">Business Administration &amp; Control</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link " href="opleiding.html">Opleiding</a></li>
+<li class="nav-item"><a class="nav-link " href="beroep.html">Beroep</a></li>
+<li class="nav-item"><a class="nav-link " href="stage.html">Stage</a></li>
+<li class="nav-item"><a class="nav-link " href="over-mij.html">Over mij</a></li>
+</ul>
+</div></div></nav>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Business-Administration & Control</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<section class="hero"><div class="container"><div class="row align-items-center g-4">
+<div class="col-lg-7" data-aos="fade-right">
+<span class="info-badge"><i class="fa-solid fa-user me-1"></i> Hasan Cakmak · 21 jaar · Rijswijk</span>
+<h1 class="hero-title mt-3 mb-3">Welkom op mijn website</h1>
+<p class="hero-subtitle mb-4">Op deze website vertel ik over mijn opleiding Business Administration &amp; Control Specialist, mijn stage bij de Gemeente Den Haag en mijn toekomst als boekhouder.</p>
+<a class="btn btn-glow text-white" href="opleiding.html">Ontdek mijn opleiding</a>
+</div>
+<div class="col-lg-5" data-aos="fade-left"><div class="hero-card p-4">
+<h5><i class="fa-solid fa-compass me-2"></i>Voor toekomstige studenten</h5>
+<p>Ik laat zien wat ik leer, hoe mijn schoolweek eruitziet, wat ik tijdens mijn stage doe en waarom ik voor deze richting heb gekozen.</p>
+<ul class="list-clean mb-0"><li>Opleiding en vakken</li><li>Beroep: boekhouder</li><li>Mijn stage en ervaringen</li><li>Mijn persoonlijke verhaal</li></ul>
+</div></div></div></div></section>
+<section class="py-5"><div class="container">
+<h2 class="mb-4" data-aos="fade-up">Mijn route</h2>
+<div class="row g-4">
+<div class="col-md-4" data-aos="zoom-in"><div class="card-pro h-100 p-4"><h3 class="h5"><i class="fa-solid fa-graduation-cap me-2"></i>Opleiding</h3><p>Ik volg mbo niveau 4 Business Administration &amp; Control Specialist bij ROC Mondriaan aan de Vaz Diasdreef.</p><a class="btn btn-outline-light btn-sm" href="opleiding.html">Bekijk opleiding</a></div></div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100"><div class="card-pro h-100 p-4"><h3 class="h5"><i class="fa-solid fa-briefcase me-2"></i>Mijn toekomst</h3><p>Mijn doel is om later als boekhouder te werken. Ik vind het leuk om met cijfers en administratie te werken.</p><a class="btn btn-outline-light btn-sm" href="beroep.html">Bekijk beroep</a></div></div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200"><div class="card-pro h-100 p-4"><h3 class="h5"><i class="fa-solid fa-building me-2"></i>Mijn stage</h3><p>Ik loop vier dagen per week stage bij de Gemeente Den Haag en ondersteun het financiële team.</p><a class="btn btn-outline-light btn-sm" href="stage.html">Bekijk stage</a></div></div>
+</div></div></section>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="opleiding.html">Opleiding</a></li>
-          <li class="nav-item"><a class="nav-link" href="beroep.html">Beroep</a></li>
-          <li class="nav-item"><a class="nav-link" href="over-mij.html">Over mij</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7" data-aos="fade-right">
-          <h1 class="hero-title mb-3">Welkom op mijn website</h1>
-          <p class="hero-subtitle mb-4">
-            Deze website is gemaakt voor het keuzedeel Digitale Vaardigheden en geeft informatie
-            voor toekomstige studenten van de opleiding Business Administration &amp; Control specialist.
-          </p>
-          <button class="btn-glow" onclick="location.href='opleiding.html'">
-            Ontdek de opleiding
-          </button>
-        </div>
-        <div class="col-lg-5" data-aos="fade-left">
-          <div class="hero-card p-4">
-            <h5 class="mb-3">Voor wie is deze website?</h5>
-            <p class="mb-3">
-              Deze site is bedoeld voor iedereen die wil weten wat de opleiding inhoudt, wat je later kunt doen
-              en hoe ik de opleiding zelf ervaar.
-            </p>
-            <ul class="mb-0">
-              <li>Informatie over de opleiding</li>
-              <li>Uitleg over het beroep</li>
-              <li>Persoonlijke ervaringen en media</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sections -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Wat vind je hier?</h2>
-      <div class="row g-4">
-
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card-pro h-100 p-3">
-            <div class="card-body">
-              <h5 class="card-title mb-2">
-                <i class="fa-solid fa-graduation-cap me-2"></i>Opleiding
-              </h5>
-              <p class="card-text">
-                Alles over vakken, school, sfeer en waarom deze opleiding bij jou past.
-              </p>
-              <button class="btn btn-outline-light btn-sm mt-2" onclick="location.href='opleiding.html'">
-                Bekijk opleiding
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-          <div class="card-pro h-100 p-3">
-            <div class="card-body">
-              <h5 class="card-title mb-2">
-                <i class="fa-solid fa-briefcase me-2"></i>Beroep
-              </h5>
-              <p class="card-text">
-                Wat je later gaat doen, baankansen, toekomst en benodigde vaardigheden.
-              </p>
-              <button class="btn btn-outline-light btn-sm mt-2" onclick="location.href='beroep.html'">
-                Bekijk beroep
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card-pro h-100 p-3">
-            <div class="card-body">
-              <h5 class="card-title mb-2">
-                <i class="fa-solid fa-user me-2"></i>Over mij
-              </h5>
-              <p class="card-text">
-                Wie ik ben, mijn motivatie, mijn ervaringen en mijn media (video, vlog, collage).
-              </p>
-              <button class="btn btn-outline-light btn-sm mt-2" onclick="location.href='over-mij.html'">
-                Bekijk over mij
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 – Business Administration &amp; Control – Keuzedeel Digitale Vaardigheden
-  </footer>
-
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });</script>
-
-</body>
-</html>
+<footer>© 2026 – Hasan Cakmak – Business Administration &amp; Control – Keuzedeel Digitale Vaardigheden</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({once:true,duration:700,easing:'ease-out-cubic'});</script>
+</body></html>
